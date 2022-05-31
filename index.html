@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Módulo 4 - CSS - Part 7</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic" rel="stylesheet" />
+
+    <style>
+      *{
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+      body{
+        display: flex;
+        flex-wrap: wrap;
+        width: 100vw;
+        height: 100vh;
+        gap: .2rem;
+
+        justify-content: space-around;
+        align-items: center;
+      }
+      .card{
+        width: 22vw;
+        height: 40vh;
+        border: 5px solid black;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: Poppins;
+        font-size: 22px;
+        font-weight: bold;
+        text-transform: uppercase;
+        text-align: center;
+
+      }
+    </style>
+  </head>
+  <body>
+    <div class="card" style="background: #207710">hexadecimal: #207710</div>
+    <div class="card" style="background: #3843b87b">hexadecimal com transparência: #3843b87b</div>
+    <div class="card" style="background: rgb(176, 99, 27)">RGB (176, 99, 27)</div>
+    <div class="card" style="background: rgba(176, 27, 166, 0.5)">RGBA (176, 27, 166, 0.5)</div>
+    <div class="card" style="background: hsl(161, 73%, 54%)">HSL (161, 73%, 54%)</div>
+    <div class="card" style="background: hsla(345, 29%, 54%, 0.456)">HSLA (345, 29%, 54%, 0.456)</div>
+    <div class="card" style="background-color: initial">Cor predefinida pelos browsers</div>
+    <div class="card" style="background-color: inherit;">cor atual do elemento</div>
+  </body>
+</html>
